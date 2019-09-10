@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculo de media</title>
+</head>
+
+<H1>HOLA FELIPE</H1>
+
+<body>
+    <script>
+        
+        let a = prompt("digite sua nota de matematica: ");
+        let b = prompt("digite sua nota de Ciencias: ");    
+        let c = prompt("Digite a quantidade de faltas: ");
+             
+
+        a = parseInt(a);
+        b = parseInt(b);
+        c = parseInt(c);
+
+        let media = 4;
+        let faltas_maximas = 15;
+
+        if ( ( a + b) /2 >= media && c <= faltas_maximas){
+            document.write("Voce esta aprovado");
+        }else{
+            document.write('Voce esta reprovado');
+        }
+
+    
+    </script>
+</body>
+</html>
