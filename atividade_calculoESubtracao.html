@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let num1 = prompt('Digite um numero:');
+        let operacion = prompt('Digite a operacao');
+        let num2 = prompt('digite outro numero:');
+
+
+        function calc(num1, num2, operacion) {
+
+            num1 = parseFloat(num1);
+            num2 = parseFloat(num2);
+
+            if(operacion == '+'){
+                resultado = num1 + num2;
+            }
+
+            if(operacion == '-'){
+                resultado = num1 - num2;
+            }
+            if(operacion == 'x'){
+                resultado = num1 * num2;
+            }
+            if(operacion == '/'){
+                resultado = num1 / num2;
+
+            }
+
+            return resultado;            
+        }
+        
+        document.write('Tu resultado es: ' + calc(num1, num2, operacion));
+    
+    
+    </script>
+
+
+
+</body>
+</html>
