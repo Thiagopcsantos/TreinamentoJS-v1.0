@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input 
+        type="text" 
+        placeholder="Digite um caracter aqui" 
+        id="enter"
+        onkeyup="action()"/>
+    <hr />
+    <span>Letras</span>
+    <input type="text" disabled='disabled' id="words"/>
+    <span>Numeros</span>
+    <input type="text" disabled='disabled' id="numbers"/>
+
+    
+    <script>
+        function action(){
+          let caracter = document.getElementById('enter').value;
+          document.getElementById('enter').value = '';
+
+            caracter.trim();
+
+            switch(caracter){
+                case '0':
+                case '1':
+                case '2':
+                case '3':
+                case '4':
+                case '5':
+                case '6':
+                case '7':
+                case '8':
+                case '9':        
+                    document.getElementById('words').value = caracter; 
+                    break;     
+                default:   
+                    document.getElementById('numbers').value = caracter;
+          }
+        }
+        
+    
+    </script>
+</body>
+</html>
