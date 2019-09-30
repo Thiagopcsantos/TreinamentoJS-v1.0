@@ -7,39 +7,33 @@
     <title>Document</title>
 </head>
 <body>
-    <script>    
+    <style>
 
-        let num1 = prompt('DIgite um numero: ');
-        let operacion = prompt('DIgite uma operacion: ');
-        let num2 = prompt('digite outro numero: ');       
-
-
-        function calc(num1, num2, operacion){
-
-            num1 = parseFloat(num1);
-            num2 = parseFloat(num2);
-
-            if(operacion == '+'){
-                resultado = num1 + num2;
-            }
-
-            if(operacion == '-'){
-                resultado = num1 - num2;
-            }
-
-            return resultado;
-
+        .style{
+            background: blue;
         }
 
+        .style2{
+            height: 50px;
+            width: 100px;
+            background-color: brown
+        }  
+    </style>
 
-        document.write('o resultado é:' + calc(num1, num2, operacion));
+    <div id="mensagem" class="style">mudando estilo</div>
 
 
+    <hr />
 
+    <button type="button" onclick="trocando()">troca tudo</button>
 
-
-    
-    
+    <script>
+        function trocando(){
+            document.getElementById('mensagem').className = 'style2';   
+        }
     </script>
+
+
+
 </body>
 </html>
